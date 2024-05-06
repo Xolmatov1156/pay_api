@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-Medium.woff2') format('woff2'),
+        url('../fonts/PublicSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Serif Display';
+    src: url('../fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/DMSerifDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin: 0px auto;
+    
+}
+
+body {
+    background-color: #EDF3F8;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 730px 730px;
+}
+
+.header-item {
+    width: 1100px;
+    height: 48px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-item-link a {
+    text-decoration: none;
+    color: #36536B;
+    font-family: "Public Sans";
+    &:active {
+        color: #BA4270;
+    }
+}
+
+
+.header-item-button button{
+    width: 173px;
+    height: 48px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #BA4270;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:active {
+        background-color: #DA6D97;
+    }
+}
+
+.hero-main {
+    display: flex;
+    gap: 206px;
+    padding-bottom: 100px;
+}
+
+.hero-text {
+    width: 537px;
+    height: 243px;
+    margin: 152px 0px 0px 0px;
+    background-color: #EDF3F8;
+}
+
+.hero-text h1 {
+    font-size: 72px;
+    line-height: 72px;
+    color: #36536B;
+    font-family: 'DM Serif Display';
+}
+
+.main-input {
+    width: 445px;
+    height: 48px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-top: 21px;
+    position: absolute;
+    color: #36536B;
+}
+
+.main-btn {
+    width: 173px;
+    height: 48px;
+    position: relative;
+    top: 20px;
+    left: 272px;
+    border-radius: 25px;
+    border: 1px transparent;
+    color: white;
+    background-color: #BA4270;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:active {
+        background-color: #DA6D97;
+    }
+}
+
+.contact-link {
+    margin: 36px 0px 0px 27px;
+    display: flex;
+    gap: 5px;
+    font-family: "Public Sans";
+}
+
+.contact-link a{
+    text-decoration: none;
+    color: #36536B;
+}
+
+.hero-img {
+    margin-top: 74px;
+}
+
+
+.about {
+    background-color: #1B262F;
+    height: 472px;
+    background-image: url(../images/about-back.png);
+    background-repeat: no-repeat;
+}
+
+.about-main {
+    display: flex;
+    gap: 131px;
+    
+}
+
+.about-text {
+    width: 445px;
+    height: 272px;
+    padding-top: 100px;
+    color: white;
+}
+
+.about-text-title {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "DM Serif Display";
+    
+}
+
+.about-word {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 0.6;
+    font-family: "Public Sans";
+}
+
+.about-link {
+    width: 129px;
+    height: 48px;
+    margin-top: 32px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 13px 0px;
+    background-color: #1B262F;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    transition: all 0.3s ease;
+    &:active {
+        color: #1B262F;
+        background-color: white;
+    }
+}
+
+.about-img {
+    margin-top: 185px;
+}
+
+.easy-main {
+    width: 1015px;
+    height: 284px;
+    padding-top: 150px;
+    display: flex;
+    
+}
+
+.easy-img {
+    transform: scale(1.4 , 1.5);
+}
+
+.easy-text {
+    width: 445px;
+    height: 164px;
+    margin-top: 60px;
+}
+
+.easy-text h2 {
+    color: #36536B;
+    font-size: 48px;
+    font-family: "DM Serif Display";
+}
+
+.easy-text p {
+    margin-top: 24px;
+    font-family: "Public Sans";
+    line-height: 28px;
+    font-size: 15px;
+    color: #6C8294;
+}
+
+.simple {
+    height: 780px;
+    margin-top: 200px;
+    background-image: url(../images/simple-back.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    align-items: center;
+}
+
+.simple-main {
+    display: flex;
+    align-items: center;
+}
+
+.simple-text {
+    width: 445px;
+    height: 136px;
+}
+
+.simple-text h2 {
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    color: #36536B;
+}
+
+.simple-text p {
+    font-family: "Public Sans";
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+}
+
+.personal-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-list {
+    width: 350px;
+    text-align: center;
+}
+
+.personal-list h3 {
+    font-size: 18px;
+    font-family: "Public Sans";
+    color: #36536B;
+    margin-top: 32px;
+}
+
+.personal-list p {
+    font-size: 15px;
+    margin-top: 16px;
+    font-family: "Public Sans";
+    line-height: 25px;
+    color: #6C8294;
+}
+
+.ready-main {
+    margin-top: 96px;
+    width: 830px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ready-text {
+    color: #36536B;
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.site-footer {
+    background-color: #1B262F;
+    background-image: url(../images/footer-back.png);
+    background-repeat: no-repeat;
+    background-size: 780px 780px;
+    background-position: right;
+}
+
+
+.footer-main {
+    width: 1110px;
+    height: 100px;
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link {
+    width: 432px;
+    height: 100px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    & a:active {
+        color: white;
+    }
+}
+
+.links a {
+    color: #FBFCFE;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family: "Public Sans";
+    text-decoration: none;
+}
+
+.footer-social-link {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.link-active {
+    color: white;
+}
+
+.link-active:active {
+    color: #DA6D97;
+}
